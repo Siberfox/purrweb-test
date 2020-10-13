@@ -1,0 +1,132 @@
+.intro {
+  background-image: url("../img/BG.jpg");
+  background-size: contain;
+  background-repeat: no-repeat no-repeat;
+  background-position: bottom 111px center;
+  //background-position: center center;
+  margin-bottom: 130px;
+
+  &-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 163px;
+  }
+
+  &__title {
+    color: #2f1946;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 72px;
+  }
+
+  &__logo {
+    margin-bottom: 90px;
+  }
+
+  &__button-wrapper {
+    width: 190px;
+    height: 72px;
+    margin-bottom: 74px;
+    border: 1px solid #81398b;
+    border-radius: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__scroll-button {
+    width: 163px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    background-color: #81398b;
+    font-size: 18px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &_arrow {
+      font-size: 26px;
+      margin-left: 8px;
+    }
+
+    &:hover {
+      background-color: lighten(#81398b, 10%);
+    }
+
+    &:active {
+      background-color: lighten(#81398b, 5%);
+    }
+  }
+}
+
+.cards {
+  &__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 39px;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__item {
+    width: 235px;
+    min-height: 330px;
+    background-color: #e22028;
+    padding: 60px 75px;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    &-text {
+      width: 234px;
+      height: 110px;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+      color: #ffffff;
+      background-color: #cb1d24;
+    }
+
+    &:first-child {
+      background-color: #fe4a5d;
+
+      & p {
+        background-color: #e44253;
+      }
+    }
+
+    &:last-child {
+      background-color: #ff6c00;
+
+      & p {
+        background-color: #e56100;
+      }
+    }
+  }
+}
+
+@media (max-width: 880px) {
+  .intro {
+    background-position: center center;
+
+    &__logo {
+      max-width: 90vw;
+    }
+  }
+
+  .cards {
+    &__list {
+      flex-wrap: wrap;
+    }
+  }
+}

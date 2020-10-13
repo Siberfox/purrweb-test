@@ -1,0 +1,31 @@
+.join-now {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  background-image: url("../img/Join_Now.jpg");
+  background-position: center center;
+  background-repeat: no-repeat no-repeat;
+  background-size: cover;
+
+  height: 736px;
+
+  &__button {
+    position: absolute;
+    top: 425px;
+    width: 139px;
+    height: 39px;
+    border: none;
+    border-radius: 3px;
+    background-image: linear-gradient(90deg, #e11f27 0%, #f9b315 100%);
+    font-size: 16px;
+    color: #ffffff;
+    cursor: pointer;
+    &:hover {
+      background-image: linear-gradient(90deg, #f9b315 100%, #e11f27 0%);
+    }
+    &:active {
+      background-image: linear-gradient(170deg, #e11f27 0%, #f9b315 100%);
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.header {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  padding: 25px 66px;
+  &__button {
+    cursor: pointer;
+    padding: 0;
+    margin-left: 12px;
+    width: 30px;
+    height: 26px;
+    border: none;
+    background-color: transparent;
+    &:hover {
+      .shp0 {
+        fill: #2f1946;
+      }
+    }
+  }
+}
+
+@media (max-width: 880px) {
+  .menu {
+    padding-right: 30px;
+  }
+}

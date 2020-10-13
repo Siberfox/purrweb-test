@@ -1,0 +1,119 @@
+.sign-up {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  overflow: hidden;
+  background-image: url("../img/Centre.jpg");
+  background-position: center center;
+  background-repeat: no-repeat no-repeat;
+  background-size: cover;
+  margin-bottom: 157px;
+
+  &__facebook {
+    width: 301px;
+    height: 42px;
+    border: none;
+    border-radius: 4px;
+    background-color: #2f53a3;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      background-color: lighten(#2f53a3, 10%);
+    }
+  }
+
+  &__form {
+    min-width: 450px;
+    height: 535px;
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+    border-image-source: linear-gradient(90deg, #e11f27 0%, #f9b315 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 64px 75px;
+
+    & input {
+      width: 301px;
+      height: 42px;
+      border: 2px solid #dcdcdc;
+      border-radius: 4px;
+      font-size: 16px;
+      letter-spacing: 1px;
+      padding: 15px 13px;
+
+      &:last-child {
+        border-radius: 4px;
+        background-color: #81398b;
+        font-size: 16px;
+        letter-spacing: 1px;
+        color: #ffffff;
+        text-align: center;
+        border: none;
+
+        &:hover {
+          background-color: lighten(#81398b, 10%);
+        }
+      }
+    }
+
+    & span {
+      font-size: 14px;
+      letter-spacing: 1px;
+      color: #9b9b9b;
+      text-align: center;
+      width: 301px;
+      position: relative;
+      padding: 2px 0;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 132px;
+        height: 2px;
+        border-radius: 1px;
+        background-color: #dcdcdc;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 50%;
+        width: 132px;
+        height: 2px;
+        border-radius: 1px;
+        background-color: #dcdcdc;
+      }
+    }
+
+    & h3 {
+      font-size: 38px;
+      color: #2f1946;
+      text-align: center;
+      margin: 0;
+      padding-bottom: 25px;
+    }
+  }
+  &__image {
+    min-width: 700px;
+  }
+}
+
+@media (max-width: 530px) {
+  .sign-up {
+    &__form {
+      min-width: 90vw;
+      padding: 40px 10px;
+    }
+  }
+}
