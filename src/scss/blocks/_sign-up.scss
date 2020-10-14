@@ -30,15 +30,14 @@
   &__form {
     min-width: 450px;
     height: 535px;
-    border: 10px solid;
-    border-image-slice: 1;
-    border-width: 5px;
-    border-image-source: linear-gradient(90deg, #e11f27 0%, #f9b315 100%);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     padding: 64px 75px;
+    border: 5px solid;
+    border-image-source: linear-gradient(90deg, #e11f27 0%, #f9b315 100%);
+    border-image-slice: 1;
 
     & input {
       width: 301px;
