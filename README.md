@@ -1,8 +1,8 @@
-# Тестовое задание по верстке Purrweb
+# Test task for Purrweb
 
-### Выполнил: Иванов Андрей
+### Andrey I.
 
-##### для запуска:
+##### for start:
 
 ```
 npm i
